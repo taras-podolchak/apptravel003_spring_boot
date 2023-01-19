@@ -1,6 +1,5 @@
 package com.apptravel003_spring_boot.domain.models;
 
-import java.io.Serializable;
 import java.sql.Timestamp;
 
 public class Activity {

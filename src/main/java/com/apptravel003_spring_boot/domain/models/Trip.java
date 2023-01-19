@@ -23,6 +23,7 @@ public class Trip {
         //empty for framework
     }
 
+
     public Trip(Integer typeTrip, Integer statusTrip, String title, String photoTrip, Integer level, Integer transportType, Integer price, String general, Integer recommendation, Integer safety, Integer oneWayTrip, Integer returnTrip, List<Activity> activityList, List<User> userList) {
         this.typeTrip = typeTrip;
         this.statusTrip = statusTrip;

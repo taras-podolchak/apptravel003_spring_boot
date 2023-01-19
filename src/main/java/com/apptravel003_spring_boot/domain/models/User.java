@@ -32,6 +32,7 @@ public class User {
         //empty for framework
     }
 
+
     public User(Integer typeUser, Integer statusUser, String name, String nickname, String surname, String secondSurname, List<Integer> preferActivity, Integer phoneNumber, String email, String country, String address, String location, Integer postalCode, Integer documentType, String documentNumber, String nationality, String photoUser, String photoOrganization, LocalDateTime entryDate, LocalDateTime leavingDate, Boolean legalConditions, Boolean rememberPassword) {
         this.typeUser = typeUser;
         this.statusUser = statusUser;
