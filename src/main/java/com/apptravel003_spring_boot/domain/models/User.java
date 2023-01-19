@@ -1,6 +1,7 @@
 package com.apptravel003_spring_boot.domain.models;
 
-import java.time.LocalDateTime;
+
+import java.util.Date;
 import java.util.List;
 
 public class User {
@@ -23,8 +24,8 @@ public class User {
     private String nationality;
     private String photoUser;
     private String photoOrganization;
-    private LocalDateTime entryDate;
-    private LocalDateTime leavingDate;
+    private Date entryDate;
+    private Date leavingDate;
     private Boolean legalConditions;
     private Boolean rememberPassword;
 
@@ -33,7 +34,7 @@ public class User {
     }
 
 
-    public User(Integer typeUser, Integer statusUser, String name, String nickname, String surname, String secondSurname, List<Integer> preferActivity, Integer phoneNumber, String email, String country, String address, String location, Integer postalCode, Integer documentType, String documentNumber, String nationality, String photoUser, String photoOrganization, LocalDateTime entryDate, LocalDateTime leavingDate, Boolean legalConditions, Boolean rememberPassword) {
+    public User(Integer typeUser, Integer statusUser, String name, String nickname, String surname, String secondSurname, List<Integer> preferActivity, Integer phoneNumber, String email, String country, String address, String location, Integer postalCode, Integer documentType, String documentNumber, String nationality, String photoUser, String photoOrganization, Date entryDate, Date leavingDate, Boolean legalConditions, Boolean rememberPassword) {
         this.typeUser = typeUser;
         this.statusUser = statusUser;
         this.name = name;
@@ -202,19 +203,19 @@ public class User {
         this.photoOrganization = photoOrganization;
     }
 
-    public LocalDateTime getEntryDate() {
+    public Date getEntryDate() {
         return entryDate;
     }
 
-    public void setEntryDate(LocalDateTime entryDate) {
+    public void setEntryDate(Date entryDate) {
         this.entryDate = entryDate;
     }
 
-    public LocalDateTime getLeavingDate() {
+    public Date getLeavingDate() {
         return leavingDate;
     }
 
-    public void setLeavingDate(LocalDateTime leavingDate) {
+    public void setLeavingDate(Date leavingDate) {
         this.leavingDate = leavingDate;
     }
 

@@ -18,7 +18,7 @@ public class UserResource {
         this.userService = userService;
     }
 
-
+    // http://localhost:8080/users/getUsers
     @GetMapping("/getUsers")
     public Flux<User> getUsers() {
         return userService.getUsers();

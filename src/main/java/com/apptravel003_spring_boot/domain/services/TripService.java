@@ -6,6 +6,7 @@ import com.apptravel003_spring_boot.domain.persistence_ports.TripPersistence;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 @Service
 public class TripService {
@@ -20,4 +21,9 @@ public class TripService {
     public Flux<Trip> getTrips() {
         return tripPersistence.getTrips();
     }
+
+    public Mono<Trip> getTripWithUsersWithActivities(String title) {
+        return tripPersistence.getTripWithUsersWithActivities(title);
+    }
+
 }

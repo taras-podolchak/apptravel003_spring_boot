@@ -1,6 +1,7 @@
 package com.apptravel003_spring_boot.domain.models;
 
-import java.sql.Timestamp;
+
+import java.util.Date;
 
 public class Activity {
     private Integer typeActivity;
@@ -15,8 +16,8 @@ public class Activity {
     private Integer slope;
     private String locationDeparture;
     private String locationArrival;
-    private Timestamp dateDeparture;
-    private Timestamp dateArrival;
+    private Date dateDeparture;
+    private Date dateArrival;
     private String coordinatesDeparture;
     private String coordinatesArrival;
 
@@ -24,7 +25,7 @@ public class Activity {
         //empty for framework
     }
 
-    public Activity(Integer typeActivity, Integer statusActivity, String subtitle, String photoActivity, String wikiloc, Integer complexity, Integer hoursTotal, String description, Integer distance, Integer slope, String locationDeparture, String locationArrival, Timestamp dateDeparture, Timestamp dateArrival, String coordinatesDeparture, String coordinatesArrival) {
+    public Activity(Integer typeActivity, Integer statusActivity, String subtitle, String photoActivity, String wikiloc, Integer complexity, Integer hoursTotal, String description, Integer distance, Integer slope, String locationDeparture, String locationArrival, Date dateDeparture, Date dateArrival, String coordinatesDeparture, String coordinatesArrival) {
         this.typeActivity = typeActivity;
         this.statusActivity = statusActivity;
         this.subtitle = subtitle;
@@ -139,19 +140,19 @@ public class Activity {
         this.locationArrival = locationArrival;
     }
 
-    public Timestamp getDateDeparture() {
+    public Date getDateDeparture() {
         return dateDeparture;
     }
 
-    public void setDateDeparture(Timestamp dateDeparture) {
+    public void setDateDeparture(Date dateDeparture) {
         this.dateDeparture = dateDeparture;
     }
 
-    public Timestamp getDateArrival() {
+    public Date getDateArrival() {
         return dateArrival;
     }
 
-    public void setDateArrival(Timestamp dateArrival) {
+    public void setDateArrival(Date dateArrival) {
         this.dateArrival = dateArrival;
     }
 

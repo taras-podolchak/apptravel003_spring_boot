@@ -28,4 +28,5 @@ public class ActivityPersistenceFirestore implements ActivityPersistence {
     public Mono<Activity> getActivity(String idDoc) {
         return this.activityRepository.findById(idDoc).map(ActivityEntity::toActivity);
     }
+
 }
