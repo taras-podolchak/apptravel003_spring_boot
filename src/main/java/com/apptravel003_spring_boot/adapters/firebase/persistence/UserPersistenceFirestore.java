@@ -22,4 +22,5 @@ public class UserPersistenceFirestore implements UserPersistence {
     public Flux<User> getUsers() {
         return this.userRepository.findAll().map(UserEntity::toUser);
     }
+
 }

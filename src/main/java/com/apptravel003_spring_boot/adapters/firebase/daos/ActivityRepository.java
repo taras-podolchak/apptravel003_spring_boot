@@ -5,5 +5,4 @@ import com.google.cloud.spring.data.firestore.FirestoreReactiveRepository;
 
 public interface ActivityRepository extends FirestoreReactiveRepository<ActivityEntity> {
 
-
 }

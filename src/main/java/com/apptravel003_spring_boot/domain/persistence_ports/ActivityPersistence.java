@@ -11,4 +11,5 @@ public interface ActivityPersistence {
     Flux<Activity> getActivities();
 
     Mono<Activity> getActivity(String idDoc);
+
 }
