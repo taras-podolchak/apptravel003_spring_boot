@@ -1,16 +1,11 @@
-package com.apptravel003_spring_boot.adapters.firebase.daos;
+package com.apptravel003_spring_boot.adapters.firebase.dataGenerate;
 
+import com.apptravel003_spring_boot.adapters.firebase.daos.ActivityRepository;
 import com.apptravel003_spring_boot.adapters.firebase.entities.ActivityEntity;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import reactor.core.publisher.Flux;
 
-import java.sql.Timestamp;
-import java.util.Date;
-
 //@SpringBootTest
-class ActivityRepositoryTest {
+class ActivityGenerateTest {
 
     //@Autowired
     ActivityRepository activityRepository;

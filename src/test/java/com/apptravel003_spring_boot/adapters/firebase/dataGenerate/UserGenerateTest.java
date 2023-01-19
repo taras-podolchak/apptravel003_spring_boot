@@ -1,16 +1,14 @@
-package com.apptravel003_spring_boot.adapters.firebase.daos;
+package com.apptravel003_spring_boot.adapters.firebase.dataGenerate;
 
+import com.apptravel003_spring_boot.adapters.firebase.daos.UserRepository;
 import com.apptravel003_spring_boot.adapters.firebase.entities.UserEntity;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 
 import java.sql.Timestamp;
 import java.util.Arrays;
 import java.util.Random;
 
 //@SpringBootTest
-class UserRepositoryTest {
+class UserGenerateTest {
 
     //@Autowired
     UserRepository userRepository;
