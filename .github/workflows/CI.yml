@@ -1,0 +1,25 @@
+name: Spring Core - Tests
+on:
+  push:
+    branches: [ 'develop', 'release-*' ]
+jobs:
+  test:
+    name: Test - Unit & Integration & SonarCloud Scan
+    runs-on: ubuntu-latest
+    steps:
+      #       actions/checkout MUST come before auth
+      #      - uses: 'actions/checkout@v3'
+      #      - id: 'auth'
+      #        name: 'Authenticate to Google Cloud'
+      #        uses: google-github-actions/auth@v1
+      #        with:
+      #          credentials_json: '${{ secrets.GOOGLE_CREDENTIALS }}'
+      - uses: actions/checkout@v2
+        with: { fetch-depth: 0 }
+      - uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Unit & Integration Tests
+        run: mvn -B verify
+    env:
+      GOOGLE_APPLICATION_CREDENTIALS: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}
