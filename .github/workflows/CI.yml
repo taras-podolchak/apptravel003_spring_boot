@@ -18,8 +18,8 @@ jobs:
         if: success() # always() failure() success()
         run: >
           mvn -B verify -DskipTests sonar:sonar
-          -Dsonar.projectKey=apptravel003_spring_boot
-          -Dsonar.organization=Taras-Podolchak
+          -Dsonar.projectKey=apptravel003_spring_boot-taras-podolchak
+          -Dsonar.organization=taras-podolchak
           -Dsonar.host.url=https://sonarcloud.io
           -Dsonar.login=$SONAR_TOKEN
     env:
